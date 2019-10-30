@@ -77,3 +77,8 @@ body {
     }
   }
 }
+@media (max-width: 720px){
+  .MuiTextField-root{
+    display: none !important;
+  }
+}
