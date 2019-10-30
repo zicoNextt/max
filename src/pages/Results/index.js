@@ -15,6 +15,10 @@ import {
 import StarIcon from '@material-ui/icons/Star';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
+import img1 from '../../assets/studio3.jpg'
+import img2 from '../../assets/studio4.jpg'
+import img3 from '../../assets/studio5.jpg'
+
 export default function Results() {
   const [spots, setSpots] = useState([]);
 
@@ -91,8 +95,9 @@ export default function Results() {
         <hr/>
         <ul className="spot-list">
           {spots.map(spot => (
+            <>
             <li key={spot._id}>
-              <header style={{ backgroundImage: `url(${spot.thumbnail_url})` }}></header>
+              <header style={{ backgroundImage: `url(${img1})` }}></header>
               <div className="spot-content">
                 <p className="features">1 Bateria · 2 Guitarras · 2 Baixos</p>
                 <p className="title">{spot.company}</p>
@@ -100,6 +105,25 @@ export default function Results() {
                 <p className="nota"><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarBorderIcon color="action" fontSize="small"/></p>
               </div>
             </li>
+            <li key={spot._id}>
+              <header style={{ backgroundImage: `url(${img2})` }}></header>
+              <div className="spot-content">
+                <p className="features">1 Bateria · 2 Guitarras · 2 Baixos</p>
+                <p className="title">{spot.company}</p>
+                <p className="price">R${spot.price},00/h</p>
+                <p className="nota"><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarBorderIcon color="action" fontSize="small"/></p>
+              </div>
+            </li>
+            <li key={spot._id}>
+            <header style={{ backgroundImage: `url(${img3})` }}></header>
+            <div className="spot-content">
+              <p className="features">1 Bateria · 2 Guitarras · 2 Baixos</p>
+              <p className="title">{spot.company}</p>
+              <p className="price">R${spot.price},00/h</p>
+              <p className="nota"><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarIcon color="action" fontSize="small"/><StarBorderIcon color="action" fontSize="small"/></p>
+            </div>
+          </li>
+          </>
           ))}
         </ul>
       </div>
