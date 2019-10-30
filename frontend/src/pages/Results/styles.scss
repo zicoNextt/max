@@ -1,0 +1,80 @@
+header{
+  background: #4ccaa1;
+  height: 80px;
+  display: flex;
+  padding: 0 20px;
+
+  img.logo{
+    max-width: 100px;
+    margin: -10px 0;
+  }
+  form{
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    input{
+      width: 100%;
+      height: 50px;
+    }
+  }
+}
+
+.container-results{
+  margin: 0 auto;
+  min-height: calc(100vh - 110px);
+  align-items: stretch;
+  flex-direction: row;
+}
+
+ul.spot-list {
+  margin-top: 25px;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 20px;
+  li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    header{
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      border-radius: 4px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .spot-content{
+      border: 1px solid #ababab;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 10px 15px;
+      .features{
+        color: #818161;
+        font-size: 13px;
+        line-height: 13px;
+      }
+      .title{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .nota{
+        .MuiSvgIcon-colorAction {
+          color: #4ccaa0cf;
+        }
+      }
+    }
+  }
+}
+
+ul.spot-list li strong {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #444;
+}
+
+ul.spot-list li span {
+  font-size: 14px;
+  color: #999;
+}
