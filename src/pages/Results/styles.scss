@@ -7,6 +7,7 @@ header{
   img.logo{
     max-width: 100px;
     margin: -10px 0;
+    cursor: pointer;
   }
   form{
     margin-left: 20px;
@@ -29,7 +30,6 @@ header{
 }
 
 ul.spot-list {
-  margin-top: 25px;
   width: 100%;
   list-style: none;
   margin-bottom: 20px;
@@ -37,6 +37,9 @@ ul.spot-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    &:hover{
+      cursor: pointer;
+    }
     header{
       width: 100%;
       height: 150px;
